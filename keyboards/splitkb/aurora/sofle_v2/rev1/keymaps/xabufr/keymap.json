@@ -32,21 +32,5 @@
             "XXXXXXX"   , "RM_NEXT"   , "RM_HUED"   , "RM_SATD"   , "RM_VALD"   , "XXXXXXX"   , "XXXXXXX"   , "XXXXXXX"   , "XXXXXXX"   , "KC_MPRV"   , "KC_MPLY"   , "KC_MNXT"   , "XXXXXXX"   , "XXXXXXX"   ,
                                         "_______"   , "_______"   , "_______"   , "_______"   , "_______"   , "_______"   , "_______"   , "_______"   , "_______"   , "_______"
         ]
-    ],
-    "config": {
-        "features": {
-            "oled": false,
-            "rgb_matrix": true,
-            "rgblight": false
-        },
-        "encoder": {
-            "enabled": true
-        },
-        "rgblight": {
-            "hue_steps": 8,
-            "saturation_steps": 8,
-            "brightness_steps": 8,
-            "sleep": true
-        }
-    }
+    ]
 }
