@@ -6,7 +6,14 @@ cd "$(dirname "$0")"
 qmk compile
 
 mkdir -p mnt_flash
-sudo mount /dev/disk/by-label/RPI-RP2 ./mnt_flash
+
+disk=/dev/disk/by-label/RPI-RP2
+echo Waiting "$disk" to appear
+until [ -e "$disk" ]; do
+  sleep 0.1
+done
+
+sudo mount "$disk" ./mnt_flash
 sudo cp "${PROJECT_ROOT}"/splitkb_aurora_sofle_v2_rev1_xabufr.uf2 ./mnt_flash/
 sudo umount ./mnt_flash
 rm -rf mnt_flash
